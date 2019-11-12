@@ -34,7 +34,8 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         //여기서 뷰홀더에 position 별로 데이터 뿌려줌
-
+        holder.textView.setText(dummyTextList.get(position)
+            + "\nView Holder position : " + position);
     }
 
     @Override
