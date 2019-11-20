@@ -2,12 +2,14 @@ package com.gahee.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.RemoteViews;
 
 import com.gahee.myapplication.data.RemoteViewModel;
 import com.gahee.myapplication.model.Movie;
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //onCreate() 안에서 remoteViewModel 객체를 초기화 해줍니다.
-        remoteViewModel = new RemoteViewModel();
+        remoteViewModel = ViewModelProviders.of(this).get(RemoteViewModel.class);
 
         //remoteViewModel 안의 네트워크 코드를 호출합니다.
         //Client 인 우리가 영화 정보를 받아오게 되었습니다 !

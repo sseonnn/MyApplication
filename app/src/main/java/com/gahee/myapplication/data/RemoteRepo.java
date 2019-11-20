@@ -3,11 +3,8 @@ package com.gahee.myapplication.data;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.MutableLiveData;
-
-import com.gahee.myapplication.model.Movie;
 import com.gahee.myapplication.model.MovieResponse;
 
-import java.util.List;
 
 public class RemoteRepo {
 

@@ -1,13 +1,12 @@
 package com.gahee.myapplication.data;
 
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 
-import com.gahee.myapplication.model.Movie;
 import com.gahee.myapplication.model.MovieResponse;
 
-import java.util.List;
 
-public class RemoteViewModel {
+public class RemoteViewModel extends ViewModel {
 
     //아래 레이어에서 정의한 getter 들은 ViewModel 클래스를 통해서 호출합니다.
     //ViewModel 을 상속받은 클래스는 LiveData 를 관찰할 수 있도록 하는 클래스로

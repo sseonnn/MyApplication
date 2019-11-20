@@ -3,7 +3,6 @@ package com.gahee.myapplication.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
@@ -11,9 +10,10 @@ import java.util.List;
 
 public class MovieResponse implements Parcelable{
 
+    //TODO 4 : JSON 객체를 받아와서 Java로 변환하기 위한 클래스를 작성합니다.
 
     @SerializedName("results")
-    List<Movie> results; //results
+    List<Movie> results;
 
     MovieResponse(){
 

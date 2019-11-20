@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
+
+<!-- TODO 1 : detail layout 을 디자인 해 주세요 -->
 <RelativeLayout
     android:layout_margin="@dimen/text_margin_24"
     android:layout_width="match_parent"

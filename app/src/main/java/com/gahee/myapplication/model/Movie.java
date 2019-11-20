@@ -7,6 +7,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class Movie implements Parcelable {
 
+    //TODO 5 : JSON으로 받은 results 라는 리스트 안의 요소들을 Java로 변환하기 위한 클래스를 작성합니다.
+
     @SerializedName("poster_path")
     private String posterPath;
 
