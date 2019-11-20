@@ -1,22 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@color/colorDarkGrey"
     android:layout_margin="18dp"
     android:layout_width="match_parent"
     android:layout_height="@dimen/main_view_holder_h">
 
+<!--TODO 33 : 뷰홀더 디자인을 아래와 같이 수정해 줍니다. -->
+
+    <RelativeLayout
+        android:id="@+id/main_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_main_movie_poster"
+            android:layout_width="150dp"
+            android:layout_height="200dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/img_main_movie_poster"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_main_movie_title"
+                android:textSize="@dimen/text_size_medium"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_text" />
+
+            <TextView
+                android:id="@+id/tv_main_movie_release_date"
+                android:textSize="@dimen/text_size_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_text" />
+
+            <TextView
+                android:id="@+id/tv_main_movie_vote_average"
+                android:textSize="@dimen/text_size_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_text" />
+
+            <TextView
+                android:id="@+id/tv_main_movie_synopsis"
+                android:textSize="@dimen/text_size_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="@string/sample_text" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
     <TextView
-        android:id="@+id/tv_main_view_holder_text"
-        android:layout_weight="1"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/main_view_holder_text_size_medium"
-        android:gravity="center"
+        android:id="@+id/tv_main_click_me"
         android:layout_gravity="center"
-        android:text="@string/sample_text"
+        android:textSize="@dimen/text_size_small"
+        android:text="@string/click_me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
 
 
 </LinearLayout>

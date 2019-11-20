@@ -13,7 +13,7 @@ public class RemoteViewModel extends ViewModel {
     //onCreate() 함수에서 - Main 함수 - ViewModel 에 observe() 메소드를
     //호출하면 데이터가 변경될 때마다 해당 메소드가 호출됩니다.
 
-    //Repository class 에서 정의한 getter 들과 데이터를 요청하는 fetch 함수를
+    // TODO 25 : Repository class 에서 정의한 getter 들과 데이터를 요청하는 fetch 함수를
     //받아오기 위한 객체 선언 입니다.
     private final RemoteRepo remoteRepo;
 
@@ -23,12 +23,12 @@ public class RemoteViewModel extends ViewModel {
         remoteRepo = RemoteRepo.getInstance();
     }
 
-    //LiveData 를 가져오는 getter 의 layer 를 한단계 더 만듭니다.
+    // TODO 26 : LiveData 를 가져오는 getter 의 layer 를 한단계 더 만듭니다.
     public MutableLiveData<MovieResponse> getPopularMovies(){
         return remoteRepo.getPopularMoviesRepo();
     }
 
-    //네트워크 처리를 시작시키는 메소드를 호출합니다.
+    // TODO 27 : 네트워크 처리를 시작시키는 메소드를 호출합니다.
     public void fetchPopularMoviesFromRemote(){
         remoteRepo.fetchPopularMoviesAsync();
     }

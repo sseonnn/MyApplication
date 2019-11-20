@@ -12,9 +12,9 @@
     android:layout_height="@dimen/intro_box_height"
     >
 
+<!-- TODO 43 : ImageView 의 background 속성을 지워주세요 -->
     <ImageView
         android:id="@+id/img_detail_movie_poster"
-        android:background="@color/colorBlack"
         android:layout_width="150dp"
         android:layout_height="match_parent"/>
 
