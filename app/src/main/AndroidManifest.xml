@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gahee.myapplication">
 
+<!--    TODO 0 : 인터넷 퍼미션을 추가해 주세요 !!! -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
